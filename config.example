@@ -1,0 +1,91 @@
+# chie config — copy to ~/.config/chie/config and edit.
+# Format is Ghostty-style: one `key = value` per line, '#' starts a full-line
+# comment. Unknown keys are reported in the editor, not fatal.
+#
+# Precedence: built-in defaults < this file < command-line flags.
+# Booleans accept: true/false, on/off, yes/no, 1/0.
+
+# --- indentation ----------------------------------------------------------
+
+# tabsize      spaces per indent step (1..16)
+tabsize = 4
+
+# tabs         indent with real tab characters instead of spaces
+tabs = false
+
+# autoindent   copy the current line's indent onto a new line
+autoindent = true
+
+# --- view -----------------------------------------------------------------
+
+# numbers      show line numbers in the gutter
+numbers = true
+
+# syntax       syntax highlighting on at startup
+syntax = true
+
+# cursorline   highlight the line the cursor is on
+cursorline = false
+
+# scrolloff    keep this many lines visible above/below the cursor (0..99)
+scrolloff = 0
+
+# mouse        capture the mouse (click to move, drag to select, wheel scroll)
+mouse = true
+
+# --- saving ---------------------------------------------------------------
+
+# backup          keep a "<file>~" copy on save
+backup = false
+
+# trim_trailing   strip trailing whitespace from every line on save
+trim_trailing = false
+
+# final_newline   make sure the file ends with a newline on save
+final_newline = false
+
+# --- search ---------------------------------------------------------------
+
+# ignorecase   case-insensitive search
+ignorecase = true
+
+# smartcase    when ignorecase is on, become case-sensitive if the query
+#              contains an uppercase letter (vim-style)
+smartcase = true
+
+# --- colors ---------------------------------------------------------------
+# Value = <color> [bold], where <color> is one of:
+#   a name:   black red green yellow blue magenta cyan white
+#             and the bright* variants (brightred, brightblue, ...)
+#   a hex:    #rrggbb        (e.g. #ff8800)
+#   an index: 0..255         (256-color palette)
+#   default   the terminal's own foreground/background
+#
+# Syntax classes:
+# color.text = default
+# color.keyword = brightblue bold
+# color.builtin = cyan
+# color.type = brightcyan bold
+# color.function = yellow
+# color.string = green
+# color.template = green
+# color.interp = brightyellow bold
+# color.number = magenta
+# color.constant = brightmagenta bold
+# color.comment = brightblack
+# color.operator = red
+# color.punct = default
+# color.escape = brightyellow bold
+# color.preproc = magenta
+#
+# Chrome (bars, gutter, selection, search match, cursor line):
+# color.bar_fg = black
+# color.bar_bg = white
+# color.key_fg = brightwhite
+# color.key_bg = blue
+# color.gutter = brightblack
+# color.gutter_current = yellow
+# color.selection = blue
+# color.match_fg = black
+# color.match_bg = yellow
+# color.cursorline = 236

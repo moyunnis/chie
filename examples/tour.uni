@@ -1,0 +1,30 @@
+// A tour of what chie highlights in UniLand. Open it with:  chie examples/tour.uni
+//
+// Comments come in three flavours:
+# a hash line
+/* and a
+   block that spans lines */
+
+const GREETING = "Привет"        // strings and constants
+let count = 42                    // numbers
+
+// Template strings with {interpolation} and doubled {{ braces }}
+let name = "мир"
+print(`{GREETING}, {name}! {{literal}}`)
+
+// Structural keywords, operators, builtins
+func fib(n) {
+    if (n < 2) { return n }
+    return fib(n - 1) + fib(n - 2)
+}
+
+for (let i = 0; i < 10; i++) {
+    print(`fib({i}) = {fib(i)}`)
+}
+
+// Embedded Python — highlighted with Python rules until the matching brace
+python {
+    import math
+    uni.phi = (1 + math.sqrt(5)) / 2   # a python comment inside the block
+}
+print("phi =", phi)
